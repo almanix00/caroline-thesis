@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications and Dissertation Structure</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 11pt;
+        }
+        caption {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            font-size: 12pt;
+            caption-side: top;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 2px solid #000;
+            border-top: 2px solid #000;
+        }
+        td {
+            padding: 12px 8px;
+            vertical-align: top;
+            border-bottom: 1px solid #dee2e6;
+        }
+        tbody tr:last-child td {
+            border-bottom: 2px solid #000;
+        }
+        .no-col {
+            font-weight: bold;
+        }
+        .author {
+            font-style: italic;
+            color: #555;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .dataset-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>1.3.1 Journal Articles</h2>
+        <table>
+            <caption>Table 2: Journal Articles</caption>
+            <thead>
+                <tr>
+                    <th style="width: 8%;">No.</th>
+                    <th style="width: 52%;">Title</th>
+                    <th style="width: 40%;">Journal / Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="no-col">J1</td>
+                    <td>
+                        GraphRAG for Security Compliance: Bridging Knowledge Graphs and Large Language Models<br>
+                        <span class="author">Authors: [Your Name], et al.</span>
+                    </td>
+                    <td>
+                        IEEE Transactions on Information Forensics and Security<br>
+                        Under Review (Submitted: Dec 2024)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="no-col">J2</td>
+                    <td>
+                        Quantifying Cognitive Complexity in Cybersecurity Regulations: A Linguistic Analysis of NIST Frameworks<br>
+                        <span class="author">Authors: [Your Name], et al.</span>
+                    </td>
+                    <td>
+                        Computers & Security<br>
+                        Published (Vol. XX, 2024)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>1.3.2 Conference Papers</h2>
+        <table>
+            <caption>Table 3: Conference Papers</caption>
+            <thead>
+                <tr>
+                    <th style="width: 8%;">No.</th>
+                    <th style="width: 52%;">Title</th>
+                    <th style="width: 40%;">Conference / Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="no-col">C1</td>
+                    <td>
+                        SecKG: A Cross-Framework Security Knowledge Graph for Unified Compliance Management<br>
+                        <span class="author">Authors: [Your Name], et al.</span>
+                    </td>
+                    <td>
+                        ACM Conference on Computer and Communications Security (CCS)<br>
+                        Accepted (CCS 2024)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="no-col">C2</td>
+                    <td>
+                        From Text to Graph: Automated Construction of Security Ontologies from Regulatory Documents<br>
+                        <span class="author">Authors: [Your Name], et al.</span>
+                    </td>
+                    <td>
+                        IEEE International Conference on Data Engineering (ICDE)<br>
+                        In Preparation (Target: ICDE 2025)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>1.3.3 Datasets and Open-Source Contributions</h2>
+        <table>
+            <caption>Table 4: Datasets and Open-Source Contributions</caption>
+            <thead>
+                <tr>
+                    <th>Resource</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="dataset-title">SecKG v1.0: Security Knowledge Graph with 12,847 nodes and 43,921 edges</div>
+                        Available at: <code>github.com/[your-repo]/SecKG</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="dataset-title">NIST Complexity Benchmark: 1,268 annotated control items with FKGL scores and expert ratings</div>
+                        Available at: <code>zenodo.org/[your-doi]</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="dataset-title">GraphRAG Evaluation Suite: 60 standard queries with gold-standard answers and evaluation metrics</div>
+                        Available at: <code>github.com/[your-repo]/GraphRAG-Eval</code>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>1.3.4 Dissertation Structure Overview</h2>
+        <table>
+            <caption>Table 5: Dissertation Structure Overview</caption>
+            <thead>
+                <tr>
+                    <th style="width: 15%;">Chapter</th>
+                    <th style="width: 30%;">Title</th>
+                    <th style="width: 55%;">Key Contents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="no-col">Chapter I</td>
+                    <td>Introduction</td>
+                    <td>Motivation, Research Contributions, Publications</td>
+                </tr>
+                <tr>
+                    <td class="no-col">Chapter II</td>
+                    <td>Problem Background</td>
+                    <td>Semantic Complexity, Fragmented Knowledge, LLM Limitations in Compliance, Research Gap</td>
+                </tr>
+                <tr>
+                    <td class="no-col">Chapter III</td>
+                    <td>Literature Review</td>
+                    <td>NLP in Legal Tech, Knowledge Graphs Basics, Evolution from RAG to GraphRAG, Current State of Security Compliance Automation</td>
+                </tr>
+                <tr>
+                    <td class="no-col">Chapter IV</td>
+                    <td>[Study 1] Linguistic Complexity Analysis</td>
+                    <td>FKGL analysis of NIST Documents, Cognitive Load Theory Application, Identification of High-Risk Control Items</td>
+                </tr>
+                <tr>
+                    <td class="no-col">Chapter V</td>
+                    <td>[Study 2] SecKG Construction</td>
+                    <td>Ontology Design for Security Regulations, Entity/Relation Extraction Pipeline, Multi-layered Mapping of Heterogeneous Frameworks</td>
+                </tr>
+                <tr>
+                    <td class="no-col">Chapter VI</td>
+                    <td>[Study 3] GraphRAG Reasoning System</td>
+                    <td>System Architecture Design, Integration of SecKG with LLM, Retrieval Strategy Optimization, Performance Metrics & Comparative Analysis</td>
+                </tr>
+                <tr>
+                    <td class="no-col">Chapter VII</td>
+                    <td>Discussion & Conclusion</td>
+                    <td>Policy Implications for Regulators, Technical Limitations, Future Work Direction</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
