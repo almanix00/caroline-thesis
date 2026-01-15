@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Stage Integrated Framework Overview</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 11pt;
+        }
+        caption {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            font-size: 12pt;
+            caption-side: top;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 2px solid #000;
+            border-top: 2px solid #000;
+        }
+        td {
+            padding: 12px 8px;
+            vertical-align: top;
+            border-bottom: 1px solid #dee2e6;
+        }
+        tbody tr:last-child td {
+            border-bottom: 2px solid #000;
+        }
+        .stage {
+            font-weight: bold;
+        }
+        .bullet-list {
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        .bullet-list li {
+            margin: 4px 0;
+        }
+        .bullet-list li:before {
+            content: "• ";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <caption>Table 1: Three-Stage Integrated Framework Overview</caption>
+            <thead>
+                <tr>
+                    <th style="width: 12%;">Stage</th>
+                    <th style="width: 18%;">Research Focus</th>
+                    <th style="width: 22%;">Methodology</th>
+                    <th style="width: 20%;">Key Metrics</th>
+                    <th style="width: 18%;">Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="stage">Stage 1</td>
+                    <td>Linguistic Complexity Analysis</td>
+                    <td>
+                        <ul class="bullet-list">
+                            <li>FKGL 측정</li>
+                            <li>NASA-TLX 평가</li>
+                            <li>ANOVA, Pearson 상관분석</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="bullet-list">
+                            <li>평균 FKGL: 19.8</li>
+                            <li>상관계수: <i>r</i>=0.72</li>
+                            <li>초고난도: 18.3%</li>
+                        </ul>
+                    </td>
+                    <td>1,268개 항목의 복잡도 프로파일</td>
+                </tr>
+                <tr>
+                    <td class="stage">Stage 2</td>
+                    <td>SecKG Construction</td>
+                    <td>
+                        <ul class="bullet-list">
+                            <li>Hybrid NER (Rule+ML)</li>
+                            <li>Relation Extraction</li>
+                            <li>Cross-Framework Mapping</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="bullet-list">
+                            <li>엔티티 F1: 0.89</li>
+                            <li>관계 정확도: 87.3%</li>
+                            <li>매핑: 1,847개</li>
+                        </ul>
+                    </td>
+                    <td>12,847 노드<br>43,921 엣지</td>
+                </tr>
+                <tr>
+                    <td class="stage">Stage 3</td>
+                    <td>GraphRAG System</td>
+                    <td>
+                        <ul class="bullet-list">
+                            <li>Semantic-Guided Traversal</li>
+                            <li>Context Construction</li>
+                            <li>LLM Integration</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="bullet-list">
+                            <li>정확도: 89.7%</li>
+                            <li>환각: 3.9%</li>
+                            <li>Hard 개선: +23.2%p</li>
+                        </ul>
+                    </td>
+                    <td>실시간 질의응답 시스템 (6.4초)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

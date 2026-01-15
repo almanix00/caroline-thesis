@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Three-Stage Integrated Framework Overview}
+    \label{tab:framework_overview}
+    \begin{tabular}{p{0.12\textwidth} p{0.18\textwidth} p{0.22\textwidth} p{0.20\textwidth} p{0.18\textwidth}}
+        \toprule
+        \textbf{Stage} & \textbf{Research Focus} & \textbf{Methodology} & \textbf{Key Metrics} & \textbf{Output} \\
+        \midrule
+        \textbf{Stage 1} & Linguistic Complexity Analysis & 
+        $\bullet$ FKGL 측정 \newline
+        $\bullet$ NASA-TLX 평가 \newline
+        $\bullet$ ANOVA, Pearson 상관분석 & 
+        $\bullet$ 평균 FKGL: 19.8 \newline
+        $\bullet$ 상관계수: $r=0.72$ \newline
+        $\bullet$ 초고난도: 18.3\% &
+        1,268개 항목의 복잡도 프로파일 \\
+        \midrule
+        \textbf{Stage 2} & SecKG Construction & 
+        $\bullet$ Hybrid NER (Rule+ML) \newline
+        $\bullet$ Relation Extraction \newline
+        $\bullet$ Cross-Framework Mapping & 
+        $\bullet$ 엔티티 F1: 0.89 \newline
+        $\bullet$ 관계 정확도: 87.3\% \newline
+        $\bullet$ 매핑: 1,847개 &
+        12,847 노드 \newline
+        43,921 엣지 \\
+        \midrule
+        \textbf{Stage 3} & GraphRAG System & 
+        $\bullet$ Semantic-Guided Traversal \newline
+        $\bullet$ Context Construction \newline
+        $\bullet$ LLM Integration & 
+        $\bullet$ 정확도: 89.7\% \newline
+        $\bullet$ 환각: 3.9\% \newline
+        $\bullet$ Hard 개선: +23.2\%p &
+        실시간 질의응답 시스템 (6.4초) \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\end{document}
